@@ -1,0 +1,54 @@
+*:before, 
+*:after, 
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #D1D2D4;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: #404042;
+  text-align: center;
+}
+
+h1 {
+  color: #EB458B;
+}
+
+h2 {
+  color: #FFFFFF;
+}
+
+.body-content {
+  display: flex;
+}
+
+/*---------------LEFT COLUMN----------------*/
+
+.left-column {
+  width: 50%;
+  background-color: #F5F6F8;
+}
+
+/*-----------RIGHT COLUMN------------------*/
+
+.right-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-end-card {
+  background-color: #FFFFFF;
+  width: 90%
+}
+
+.dlt-btn {
+  height: 25px;
+}
