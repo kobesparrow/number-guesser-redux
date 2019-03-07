@@ -62,12 +62,24 @@
     <section class="right-column">
       <!------------ APPENDED CARDS ------------->
       <article class=game-end-card>
-        <span>CHALLENGER 1 NAME</span>VS<span>CHALLENGER 2 NAME</span>
-        <span>WINNING CHALLENGER NAME</span>
-        <span>WINNER</span>
-        <span>47</span>GUESSES<span>1.35</span> MINUTES
-        <input type="image" class="dlt-btn" src="assets/delete.svg">
+        <div class="game-end-card-header">
+          <span class="game-end-card-name">CHALLENGER 1 NAME</span>
+          <p>VS</p>
+          <span class="game-end-card-name">CHALLENGER 2 NAME</span>
+        </div>
+        <hr>
+        <div class="game-end-card-champion-name">
+          <span class="winner-name">WINNING CHALLENGER</span>
+          <p class="winner">WINNER</p>
+        </div>
+        <hr>
+        <div class="game-end-card-footer">
+          <div><span id="winner-guesses">47</span> GUESSES</div>
+          <div><span id="winner-time">1.35</span> MINUTES</div>
+          <input type="image" class="dlt-btn" src="assets/delete.svg">
+        </div>
       </article>
+      <!------------ END APPENDED CARDS ---------->
     </section>
   </section>  
 </body>
