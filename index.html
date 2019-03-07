@@ -15,58 +15,74 @@
   </header>
   <section class="body-content">
     <section class="left-column">
-      <div class="set-range">
-        <h3>SET Range</h3>
-        <label for="min-range">Min Range</label>
-        <input type="text" id="min-range">
-        <label for="max-range">Max Range</label>
-        <input type="text" id="max-range">
-        <input type="submit" value="UPDATE">
+      <div class="left-column-box">
+        <h3>Set Range</h3>
+        <div class="input-flex">
+          <label for="min-range">Min Range</label>
+          <input type="text" class="text-input" id="min-range">
+          <label for="max-range">Max Range</label>
+          <input type="text" class="text-input" id="max-range">
+          <input type="submit" class="btn" value="UPDATE">
+        </div>  
       </div>
-      <div class="guess-box">
-        <p>The Current Range is 1 to 100</p>
+      <div class="left-column-box">
+        <p class="current-range-statement">The Current Range is 1 to 100</p>
         <h3>Challenger 1</h3>
         <label for="challenger-one-name">Min Range</label>
-        <input type="text" id="challenger-one-name">
+        <input type="text" class="text-input" id="challenger-one-name">
         <label for="challenger-one-guess">Min Range</label>
-        <input type="text" id="challenger-one-guess">
+        <input type="text" class="text-input" id="challenger-one-guess">
         <h3>Challenger 2</h3>
         <label for="challenger-two-name">Min Range</label>
-        <input type="text" id="challenger-two-name">
+        <input type="text" class="text-input" id="challenger-two-name">
         <label for="challenger-two-guess">Min Range</label>
-        <input type="text" id="challenger-two-guess">
-        <input type="submit" value="SUBMIT GUESS">
-        <input type="submit" value="RESET GAME">
-        <input type="submit" value="CLEAR GAME">
+        <input type="text" class="text-input" id="challenger-two-guess">
+        <input type="submit" class="btn" value="SUBMIT GUESS">
+        <input type="submit" class="btn" value="RESET GAME">
+        <input type="submit" class="btn" value="CLEAR GAME">
       </div>
-      <div class="latest-scores">
-        <div class="latest-scores-player-one">
-          <h3>Latest Score</h3>
-          <h4>Challenger 1 Name</h4>
-          <p>current guess</p>
-          <p>97</p>
-          <p>that's too high</p>
-        </div>
-        <div class="latest-scores-player-two">
-          <h3>Latest Score</h3>
-          <h4>Challenger 2 Name</h4>
-          <p>current guess</p>
-          <p>3</p>
-          <p>that's too low</p>
-        </div>
+      <div class="left-column-box">
+        <h3>Latest Score</h3>
+        <div class="latest-scores-flex">
+          <div class="latest-scores">
+            <h4>Challenger 1 Name</h4>
+            <p class="current-guess">current guess</p>
+            <p class="pink-number">97</p>
+            <p class="guess-assessment-text">that's too high</p>
+          </div>
+          <div class="latest-scores">
+            <h4>Challenger 2 Name</h4>
+            <p class="current-guess">current guess</p>
+            <p class="pink-number">3</p>
+            <p class="guess-assessment-text">that's too low</p>
+          </div>
+         </div> 
       </div>
     </section>
     <section class="right-column">
       <!------------ APPENDED CARDS ------------->
       <article class=game-end-card>
-        <span>CHALLENGER 1 NAME</span>VS<span>CHALLENGER 2 NAME</span>
-        <span>WINNING CHALLENGER NAME</span>
-        <span>WINNER</span>
-        <span>47</span>GUESSES<span>1.35</span> MINUTES
-        <input type="image" class="dlt-btn" src="assets/delete.svg">
+        <div class="game-end-card-header">
+          <span class="game-end-card-name">CHALLENGER 1 NAME</span>
+          <p>VS</p>
+          <span class="game-end-card-name">CHALLENGER 2 NAME</span>
+        </div>
+        <hr>
+        <div class="game-end-card-champion-name">
+          <span class="winner-name">WINNING CHALLENGER</span>
+          <p class="winner">WINNER</p>
+        </div>
+        <hr>
+        <div class="game-end-card-footer">
+          <div><span id="winner-guesses">47</span> GUESSES</div>
+          <div><span id="winner-time">1.35</span> MINUTES</div>
+          <input type="image" class="dlt-btn" src="assets/delete.svg">
+        </div>
       </article>
+      <!------------ END APPENDED CARDS ---------->
     </section>
   </section>  
 </body>
+<script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/projects/jquery.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
 </html>
