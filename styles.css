@@ -14,14 +14,26 @@ body {
 header {
   background-color: #404042;
   text-align: center;
+  padding: 20px;
 }
 
 h1 {
   color: #EB458B;
+  letter-spacing: 1px;
+  font-size: 50px;
+  font-weight: 900;
+  margin: 0px;
+}
+
+.guesser {
+  font-weight: 100;
 }
 
 h2 {
   color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 
 .body-content {
@@ -41,11 +53,20 @@ h2 {
   margin: 15px;
 }
 
+.input-flex {
+  display: flex;
+}
+
 h3 {
-  color: #757575;
+  color: #606060;
   font-weight: 800;
   font-size: medium;
   margin: 10px;
+  letter-spacing: .5px;
+}
+
+label {
+  color: #7A7B82;
 }
 
 .btn {
@@ -55,6 +76,48 @@ h3 {
   padding: 5px;
   font-weight: 600;
   font-size: small;
+}
+
+.text-input {
+  height: 36px;
+}
+
+.current-range-statement {
+  margin: 10px;
+  font-weight: 100;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.latest-scores-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.latest-scores {
+  display: flex;
+  flex-direction: column;
+}
+
+h4 {
+  font-weight: 600;
+  color: #727279;
+}
+
+.current-guess {
+  font-weight: 100;
+  font-size: medium;
+}
+
+.pink-number {
+  color: #EB458B;
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.guess-assessment-text {
+  font-weight: 300;
+  font-size: larger;
 }
 
 /*-----------RIGHT COLUMN------------------*/
