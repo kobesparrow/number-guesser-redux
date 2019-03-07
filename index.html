@@ -15,15 +15,15 @@
   </header>
   <section class="body-content">
     <section class="left-column">
-      <div class="set-range">
-        <h3>SET Range</h3>
+      <div class="left-column-box">
+        <h3>Set Range</h3>
         <label for="min-range">Min Range</label>
         <input type="text" id="min-range">
         <label for="max-range">Max Range</label>
         <input type="text" id="max-range">
-        <input type="submit" value="UPDATE">
+        <input type="submit" class="btn" value="UPDATE">
       </div>
-      <div class="guess-box">
+      <div class="left-column-box">
         <p>The Current Range is 1 to 100</p>
         <h3>Challenger 1</h3>
         <label for="challenger-one-name">Min Range</label>
@@ -35,11 +35,11 @@
         <input type="text" id="challenger-two-name">
         <label for="challenger-two-guess">Min Range</label>
         <input type="text" id="challenger-two-guess">
-        <input type="submit" value="SUBMIT GUESS">
-        <input type="submit" value="RESET GAME">
-        <input type="submit" value="CLEAR GAME">
+        <input type="submit" class="btn" value="SUBMIT GUESS">
+        <input type="submit" class="btn" value="RESET GAME">
+        <input type="submit" class="btn" value="CLEAR GAME">
       </div>
-      <div class="latest-scores">
+      <div class="left-column-box">
         <div class="latest-scores-player-one">
           <h3>Latest Score</h3>
           <h4>Challenger 1 Name</h4>
@@ -48,7 +48,6 @@
           <p>that's too high</p>
         </div>
         <div class="latest-scores-player-two">
-          <h3>Latest Score</h3>
           <h4>Challenger 2 Name</h4>
           <p>current guess</p>
           <p>3</p>
@@ -68,5 +67,6 @@
     </section>
   </section>  
 </body>
+<script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/projects/jquery.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
 </html>
