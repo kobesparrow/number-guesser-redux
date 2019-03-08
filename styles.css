@@ -99,6 +99,10 @@ label {
   flex-direction: column;
 }
 
+#udpate-btn {
+  margin-bottom: 15px;
+}
+
 .current-range-statement {
   margin: 10px;
   font-weight: 100;
