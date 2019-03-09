@@ -85,6 +85,14 @@ label {
   height: 36px;
 }
 
+.btn:disabled {
+  background-color: #D1D2D4;
+}
+
+.btn:hover:enabled  {
+  background-color: #DE1A72;
+}
+
 .text-input {
   height: 36px;
   margin-bottom: 15px;
