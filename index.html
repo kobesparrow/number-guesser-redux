@@ -20,84 +20,69 @@
         <div class="input-flex">
           <div class="text-input-columns">
             <label for="min-range">Min Range</label>
-            <input type="text" class="text-input" id="min-range">
+            <input type="number" class="text-input" id="min-range-js">
+            <p class="out-of-range">Out of Range</p>
           </div> 
           <div class="text-input-columns">
             <label for="max-range">Max Range</label>
-            <input type="text" class="text-input" id="max-range">
+            <input type="number" class="text-input" id="max-range-js">
+            <p class="out-of-range">Out of Range</p>
           </div>
-          <input type="submit" class="btn" value="UPDATE">  
+          <input type="submit" class="btn" id="udpate-btn" value="UPDATE">  
         </div>  
       </div>
       <div class="left-column-box">
-        <p class="current-range-statement">The Current Range is 1 to 100</p>
+        <p class="current-range-statement">The Current Range is <span class="minimum-display">1</span> to <span class="maximum-display">100</span></p>
         <h3>Challenger 1</h3>
         <div class="input-flex">
           <div class="text-input-columns">
-            <label for="challenger-one-name">Min Range</label>
-            <input type="text" class="text-input" id="challenger-one-name">
+            <label for="challenger-one-name">Name</label>
+            <input type="text" class="text-input guess-box" id="challenger-one-name">
           </div>
           <div class="text-input-columns">
-            <label for="challenger-one-guess">Min Range</label>
-            <input type="text" class="text-input" id="challenger-one-guess">
+            <label for="challenger-one-guess">Guess</label>
+            <input type="number" class="text-input" id="challenger-one-guess">
+            <p class="out-of-range-player-one guess-box">Out of Range</p>
           </div>
         </div>
         <h3>Challenger 2</h3>
         <div class="input-flex">
           <div class="text-input-columns">
-            <label for="challenger-two-name">Min Range</label>
-            <input type="text" class="text-input" id="challenger-two-name">
+            <label for="challenger-two-name">Name</label>
+            <input type="text" class="text-input guess-box" id="challenger-two-name">
           </div>  
           <div class="text-input-columns">
-            <label for="challenger-two-guess">Min Range</label>
-            <input type="text" class="text-input" id="challenger-two-guess">
+            <label for="challenger-two-guess">Guess</label>
+            <input type="number" class="text-input" id="challenger-two-guess">
+            <p class="out-of-range-player-two">Out of Range</p>
           </div>  
         </div>
         <div class="input-flex">
-          <input type="submit" class="btn" value="SUBMIT GUESS">
-          <input type="submit" class="btn" value="RESET GAME">
-          <input type="submit" class="btn" value="CLEAR GAME">
+          <input type="submit" class="btn" id="submit-btn-js" value="SUBMIT GUESS">
+          <input type="submit" class="btn" id="reset-btn-js"value="RESET GAME">
+          <input type="submit" class="btn" id="clear-btn-js" value="CLEAR GAME">
         </div>
       </div>
       <div class="left-column-box">
         <h3>Latest Score</h3>
         <div class="latest-scores-flex">
           <div class="latest-scores">
-            <h4>Challenger 1 Name</h4>
+            <h4 id="challenger-one-name-js">Challenger 1 Name</h4>
             <p class="current-guess">current guess</p>
-            <p class="pink-number">97</p>
-            <p class="guess-assessment-text">that's too high</p>
+            <p class="pink-number" id="challenger-one-guess-js">97</p>
+            <p class="guess-assessment-text" id="player-one-guess-assessment-js">that's too high</p>
           </div>
           <div class="latest-scores">
-            <h4>Challenger 2 Name</h4>
+            <h4 id="challenger-two-name-js">Challenger 2 Name</h4>
             <p class="current-guess">current guess</p>
-            <p class="pink-number">3</p>
-            <p class="guess-assessment-text">that's too low</p>
+            <p class="pink-number" id="challenger-two-guess-js">3</p>
+            <p class="guess-assessment-text" id="player-two-guess-assessment-js">that's too low</p>
           </div>
          </div> 
       </div>
     </section>
     <section class="right-column">
       <!------------ APPENDED CARDS ------------->
-      <article class=game-end-card>
-        <div class="game-end-card-header">
-          <span class="game-end-card-name">CHALLENGER 1 NAME</span>
-          <p>VS</p>
-          <span class="game-end-card-name">CHALLENGER 2 NAME</span>
-        </div>
-        <hr>
-        <div class="game-end-card-champion-name">
-          <span class="winner-name">WINNING CHALLENGER</span>
-          <p class="winner">WINNER</p>
-        </div>
-        <hr>
-        <div class="game-end-card-footer">
-          <div><span id="winner-guesses">47</span> GUESSES</div>
-          <div><span id="winner-time">1.35</span> MINUTES</div>
-          <input type="image" class="dlt-btn" src="assets/delete.svg">
-        </div>
-      </article>
-      <!------------ END APPENDED CARDS ---------->
     </section>
   </section>  
 </body>
