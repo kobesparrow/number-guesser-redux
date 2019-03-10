@@ -118,6 +118,15 @@ label {
   margin-bottom: 20px;
 }
 
+.out-of-range-player-one,
+.out-of-range-player-two,
+.out-of-range {
+  color: #EB458B;
+  font-size: 12px;
+}
+
+/* left bottom box */
+
 .latest-scores-flex {
   display: flex;
   justify-content: space-around;
